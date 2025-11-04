@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Profile Card Generator</h1>
+    <p>Buat kartu profil sederhana dengan pratinjau langsung.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <form id="profileForm">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" autocomplete="off">
+
+        <label for="jabatan">Jabatan</label>
+        <input type="text" id="jabatan" autocomplete="off">
+
+        <label for="bio">Bio</label>
+        <textarea id="bio" rows="2"></textarea>
+
+        <label for="foto">Foto Profil</label>
+        <input type="file" id="foto" accept="image/*">
+      </form>
+    </section>
+    <section class="preview">
+      <article class="profile-card">
+        <img id="previewFoto" src="" alt="Foto Profil" style="display:none;">
+        <h2 id="previewNama">[Nama]</h2>
+        <p id="previewJabatan">[Jabatan]</p>
+        <p id="previewBio">[Bio]</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <small>&copy; 2025 Dibuat untuk tugas UTS Desain Web</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
